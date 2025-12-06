@@ -1,5 +1,7 @@
+import { HomeActions } from "@/components/home-actions";
 import { HomeCarousel } from "@/components/home-carousel";
 import { HomeNavbottom } from "@/components/home-navbottom";
+import { HomePrayers } from "@/components/home-prayers";
 import { HomeProgramming } from "@/components/home-programming";
 import { BookPlus, ChurchIcon, HomeIcon, LayoutGridIcon, UserIcon } from "lucide-react";
 import Image from "next/image";
@@ -16,6 +18,8 @@ export default function Home() {
       </header>
       <HomeCarousel />
       <HomeProgramming />
+      <HomeActions />
+      <HomePrayers />
       <HomeNavbottom />
     </main>
   );
