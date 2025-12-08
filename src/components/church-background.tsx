@@ -5,6 +5,7 @@ import { AspectRatio } from "./ui/aspect-ratio";
 import { ArrowLeft, ArrowRight, CalendarDays, CalendarDaysIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export function ChurchBackground() {
     const router = useRouter()
@@ -25,11 +26,13 @@ export function ChurchBackground() {
             </div>
             <div className="w-full h-full bg-black/50 absolute z-10 top-0 left-0 right-0 border-0"></div>
             <div className="w-full absolute left-0 right-0 border-0 bottom-16 z-50 flex items-center justify-center">
-                <Button size={'lg'}>
-                    <CalendarDaysIcon />
-                    Acessar programação da igreja
-                    <ArrowRight />
-                </Button>
+                <Link href={'/programacao'}>
+                    <Button size={'lg'}>
+                        <CalendarDaysIcon />
+                        Acessar programação da igreja
+                        <ArrowRight />
+                    </Button>
+                </Link>
             </div>
             <div className="w-full bg-white absolute left-0 right-0 border-0 bottom-0 h-8 rounded-t-2xl z-50"></div>
         </div>

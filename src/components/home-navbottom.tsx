@@ -5,7 +5,7 @@ export function HomeNavbottom() {
   return (
     <div className="h-20">
       <footer className="fixed bottom-0 left-0 right-0 p-4 border-t bg-white">
-      <nav className="flex gap-4">
+      <nav className="flex gap-4 max-w-xl mx-auto">
         <Link href={'/'} className="flex-1 flex justify-center">
           <div className="flex flex-col justify-center items-center">
             <HomeIcon />

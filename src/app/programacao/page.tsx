@@ -12,7 +12,7 @@ export default function Page() {
     return (
         <FormProvider {...form}>
             <AppBar title="Progamação" />
-            <div className="px-4 flex flex-col gap-4">
+            <div className="px-4 flex flex-col gap-4 max-w-xl mx-auto pb-4">
                 <FormSelect
                     control={form.control}
                     label="Selecione o mês"

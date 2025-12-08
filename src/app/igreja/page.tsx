@@ -3,7 +3,7 @@ import { Mail, MailIcon, MapPinIcon, PhoneIcon, PinIcon } from "lucide-react";
 
 export default function Page() {
     return (
-        <div>
+        <div className="max-w-xl mx-auto mb-4">
             <ChurchBackground />
             <div className="px-4 flex flex-col gap-4">
                 <h2 className="text-xl font-semibold">Endereço</h2>
