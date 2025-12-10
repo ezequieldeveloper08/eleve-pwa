@@ -3,7 +3,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Calendar } from "lucide-react";
 import { Skeleton } from "../ui/skeleton";
-import { Alert } from "@/lib/models/alert";
 import { AlertService } from "@/lib/services/alert.service";
 
 export async function HomeAlerts() {
